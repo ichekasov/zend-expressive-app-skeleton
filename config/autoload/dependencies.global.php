@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
+use App\Http\Handler;
+
 return [
     'dependencies' => [
         'aliases' => [],
         'invokables' => [
-            App\Handler\PingHandler::class => App\Handler\PingHandler::class,
+            Handler\PingHandler::class => Handler\PingHandler::class,
         ],
         'factories'  => [
-            App\Handler\HomePageHandler::class => App\Handler\HomePageHandlerFactory::class,
+            Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
         ],
     ],
     'templates' => [

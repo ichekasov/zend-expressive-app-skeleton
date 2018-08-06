@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Test\Handler;
+namespace Test\Http\Handler;
 
-use App\Handler\HomePageHandler;
+use App\Http\Handler\HomePageHandler;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;

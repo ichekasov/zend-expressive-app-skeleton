@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Handler;
+namespace App\Http\Handler;
 
+use App\Http\Handler\HomePageHandler;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Zend\Expressive\Router\RouterInterface;
