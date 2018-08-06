@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AppTest\Handler;
+namespace Test\Handler;
 
 use App\Handler\HomePageHandler;
 use PHPUnit\Framework\TestCase;
