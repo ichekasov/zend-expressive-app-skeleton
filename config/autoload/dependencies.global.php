@@ -11,7 +11,7 @@ return [
             Handler\PingHandler::class => Handler\PingHandler::class,
         ],
         'factories'  => [
-            Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
+            Handler\HomeHandler::class => Handler\HomeHandlerFactory::class,
         ],
     ],
     'templates' => [

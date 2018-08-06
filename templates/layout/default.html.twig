@@ -10,15 +10,16 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
     <style>
         body { padding-top: 70px; }
-        .app { min-height: 100vh; }
+        .app { min-height: 100vh; display: flex; flex-direction: column }
         .app-footer { padding-bottom: 1em; }
-        .zf-green, h2 a { color: #68b604; }
+        .app-content { flex: 1; }
+        .jumbotron { padding: 2rem; }
     </style>
     {% block stylesheets %}{% endblock %}
 </head>
 <body class="app">
     <header class="app-header">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" role="navigation">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +32,10 @@
                 </div>
                 <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="https://docs.zendframework.com/zend-expressive" target="_blank" class="nav-link">
-                                <i class="fa fa-book"></i> Docs
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/zendframework/zend-expressive" target="_blank" class="nav-link">
-                                <i class="fa fa-wrench"></i> Contribute
-                            </a>
-                        </li>
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="{{ path('api.ping') }}" class="nav-link">
-                                Ping Test
+                                <i class="fa fa-cog"></i> Ping Test
                             </a>
                         </li>
                     </ul>
@@ -64,7 +55,7 @@
             <hr />
             {% block footer %}
                 <p>
-                    &copy; 2005 - {{ "now"|date("Y") }} by Zend Technologies Ltd. All rights reserved.
+                    &copy; {{ "now"|date("Y") }}. All rights reserved.
                 </p>
             {% endblock %}
         </div>

@@ -8,6 +8,6 @@ use Zend\Expressive\Application;
 use Zend\Expressive\MiddlewareFactory;
 
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
-    $app->get('/', Handler\HomePageHandler::class, 'home');
+    $app->get('/', Handler\HomeHandler::class, 'home');
     $app->get('/api/ping', Handler\PingHandler::class, 'api.ping');
 };
