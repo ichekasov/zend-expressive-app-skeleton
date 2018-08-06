@@ -8,7 +8,7 @@ return [
     'dependencies' => [
         'aliases' => [],
         'invokables' => [
-            Handler\PingHandler::class => Handler\PingHandler::class,
+
         ],
         'factories'  => [
             Handler\HomeHandler::class => Handler\HomeHandlerFactory::class,

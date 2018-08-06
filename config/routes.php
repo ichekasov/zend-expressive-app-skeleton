@@ -9,5 +9,4 @@ use Zend\Expressive\MiddlewareFactory;
 
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
     $app->get('/', Handler\HomeHandler::class, 'home');
-    $app->get('/api/ping', Handler\PingHandler::class, 'api.ping');
 };
