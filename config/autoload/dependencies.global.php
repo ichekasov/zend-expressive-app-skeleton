@@ -16,11 +16,18 @@ return [
         // not require arguments to the constructor. Map a service name to the
         // class name.
         'invokables' => [
-            // Fully\Qualified\InterfaceName::class => Fully\Qualified\ClassName::class,
+            App\Handler\PingHandler::class => App\Handler\PingHandler::class,
         ],
         // Use 'factories' for services provided by callbacks/factory classes.
         'factories'  => [
-            // Fully\Qualified\ClassName::class => Fully\Qualified\FactoryName::class,
+            App\Handler\HomePageHandler::class => App\Handler\HomePageHandlerFactory::class,
+        ],
+    ],
+    'templates' => [
+        'paths' => [
+            'app'    => ['templates/app'],
+            'error'  => ['templates/error'],
+            'layout' => ['templates/layout'],
         ],
     ],
 ];
