@@ -38,3 +38,9 @@ services:
             - "POSTGRES_DB=app"
         ports:
             - "54321:5432"
+    nodejs:
+        image: node:10.8-jessie
+        volumes:
+            - ./:/var/www
+        working_dir: /var/www
+        tty: true

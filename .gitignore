@@ -4,5 +4,7 @@ clover.xml
 coveralls-upload.json
 phpunit.xml
 .phpunit.result.cache
+node_modules/
+public/build/
 vendor/
 .env
