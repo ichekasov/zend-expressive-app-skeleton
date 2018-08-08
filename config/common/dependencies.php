@@ -2,16 +2,10 @@
 
 declare(strict_types=1);
 
-use App\Http\Handler;
-
 return [
     'dependencies' => [
-        'aliases' => [],
-        'invokables' => [
-
-        ],
-        'factories'  => [
-            Handler\HomeHandler::class => Handler\HomeHandlerFactory::class,
+        'abstract_factories'  => [
+            Zend\ServiceManager\AbstractFactory\ReflectionBasedAbstractFactory::class,
         ],
     ],
     'templates' => [
