@@ -40,6 +40,7 @@
     "require": {
         "php": "^7.1",
         "monolog/monolog": "^1.23",
+        "symfony/console": "^4.1",
         "symfony/dotenv": "^4.1",
         "zendframework/zend-component-installer": "^2.1.1",
         "zendframework/zend-config-aggregator": "^1.0",
@@ -80,6 +81,7 @@
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "test": "phpunit --colors=always",
-        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "app": "php bin/app.php --ansi"
     }
 }
