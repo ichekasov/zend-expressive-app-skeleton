@@ -10,4 +10,7 @@ return [
             'layout' => ['templates/layout'],
         ],
     ],
+    'twig' => [
+        'cache_dir' => 'var/cache/twig',
+    ],
 ];
