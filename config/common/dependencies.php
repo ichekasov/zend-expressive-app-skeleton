@@ -8,11 +8,4 @@ return [
             Zend\ServiceManager\AbstractFactory\ReflectionBasedAbstractFactory::class,
         ],
     ],
-    'templates' => [
-        'paths' => [
-            'app'    => ['templates/app'],
-            'error'  => ['templates/error'],
-            'layout' => ['templates/layout'],
-        ],
-    ],
 ];
