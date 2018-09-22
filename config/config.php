@@ -18,8 +18,8 @@ $aggregator = new ConfigAggregator([
     \Zend\Expressive\Helper\ConfigProvider::class,
     \Zend\Expressive\ConfigProvider::class,
     \Zend\Expressive\Router\ConfigProvider::class,
-    new PhpFileProvider(realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php'),
-    new PhpFileProvider(realpath(__DIR__) . '/development.config.php'),
+    new PhpFileProvider(realpath(__DIR__) . '/common/*.php'),
+    new PhpFileProvider(realpath(__DIR__) . '/' . (getenv('API_ENV') ?: 'prod') . '/*.php'),
 ], $cacheConfig['config_cache_path']);
 
 return $aggregator->getMergedConfig();
